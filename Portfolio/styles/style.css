@@ -1,0 +1,943 @@
+
+body{
+    background-size: 300% 300%;
+    background: #fff;
+animation: AnimateBG 20s linear infinite;
+}
+@keyframes AnimateBG { 
+    0%{background:#fff}
+    50%{background:rgba(134, 14, 10, 0.50) }
+    100%{background:#fff}
+  }
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+.movil-menu{
+    display: none;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.menu a:hover{
+    color: #000;
+
+}
+.headerTitle{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: #860E0A 5px 4px 5px;
+    border: #000 1px solid;
+    padding: 1rem;
+
+}
+
+.headerTitle-mobile{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: #860E0A 5px 4px 5px;
+    border: #000 1px solid;
+    padding: 1rem;
+
+}
+.nav-bar-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar-header a{
+    font-size: 1.5rem;
+    font-family:'Ubuntu', monospace;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar-header li{
+    display: block;
+    margin: 0 1rem;
+    height: 100%;
+}
+
+#home{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        font-family: monospace;
+        }
+
+
+#home .home-title{
+    grid-area: 2 / 2 / 3 / 3; 
+}
+
+
+#home .home-title h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: left;
+    width: max-content;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#home .home-title span{
+    display: block;
+    font-weight: lighter;
+   font-style: italic;
+   font-family: monospace;
+ 
+    
+
+}
+.title-top-text{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+.title-bottom-text{
+    color: #860E0A;
+   font-weight: lighter;
+   font-style: italic;
+   text-align: right;
+   font-size: 2rem;
+}
+
+.nav-sidebar{
+    grid-area: 3 / 5 / 4 / 6;
+    text-align: right;
+    list-style-type: none;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    
+}
+.nav-bar a{
+    color: #860E0A;
+}
+
+.nav-bar-header a:hover{
+    border: #fff 1px solid;
+    padding: 1rem;
+    color: #860E0A;
+}
+.nav-sidebar li {
+    margin: 1rem;
+    
+    
+}
+.icons{
+    color: #860E0A;
+}
+
+.social-media{
+    grid-area: 3 / 2 / 6 / 4; 
+    font-size: 1.5rem;
+    ;
+}
+.social-media a:hover{
+    color: #860E0A;
+
+}
+.social-media li{
+    display: inline-block;
+    margin: 1rem;
+}
+.social-media ul{
+    margin: 1rem;
+}
+
+.contact-button{
+    color: #000;
+    border: #860E0A solid 1px;
+    border-radius:40px;
+    margin: 1rem;
+    padding: 8px;
+}
+
+.portfolio-button{
+    color: #000;
+    border: #860E0A solid 1px;
+    border-radius:40px;
+    margin: 1rem;
+    padding: 5px;
+    
+}
+
+section{
+    height: 100vh;
+}
+
+#about{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-family: 'Ubuntu' ,monospace;
+    justify-items: center;
+    }
+
+
+.about-img{
+    grid-area: 1/1 / 4 / 3; 
+    width: auto;
+    
+    max-height: 650px;
+
+}
+
+.home-img{
+    grid-area: 1/5 / 4 / 4; 
+    width: auto;
+    
+    max-height: 650px;
+
+}
+
+.about-text{
+    grid-area: 2 / 3/ 5 / 5; 
+    font-size: 1.5rem;
+    align-items: start;
+
+    
+}
+.margin-5{
+    margin-bottom: 15px;
+}
+
+.about-title{
+    grid-area: 2/ 3 / 1 / 4; 
+    margin-top: 15%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.about-study-list{
+    grid-area: 6/2/7/5;
+   
+
+}
+
+.about-study-list ul{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1rem;
+    
+}
+.about-study-list li{
+    margin-right: 15px;
+}
+.about-study-list h3{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+
+}
+/* Portfolio */
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+height: 100%;
+width: 65%;
+justify-content: center;
+margin: 0 auto;
+margin-top: 5%;
+
+}
+
+#portfolio h3{
+
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+#portfolio .img1{
+    height: 250px;
+
+}
+.proyect-text{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.proyect-text p{
+    margin-bottom:15px;
+}
+.texto-italica{
+    font-style: italic;
+    text-decoration:underline;
+    font-weight: lighter;
+    margin-top: 25px;
+}
+
+.proyecto1-text h4{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 5%;
+}
+
+#portfolio img{
+    -webkit-box-shadow: 5px 5px 13px -6px rgba(0,0,0,0.87); 
+box-shadow: 5px 5px 13px -6px rgba(0,0,0,0.87);
+}
+#portfolio .img2{
+    height: 250px;
+
+}
+
+.proyecto2-text{
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.texto-italica{
+    font-style: italic;
+    text-decoration:underline;
+    font-weight: lighter;
+    margin-top: 25px;
+
+}
+.texto-italica:hover{
+    color: #860E0A;
+}
+
+.proyecto2-text h4{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
+#portfolio .img3{
+    height: 250px;
+}
+
+.texto-italica{
+    font-style: italic;
+    text-decoration:underline;
+    font-weight: lighter;
+    margin-top: 25px;
+
+}
+.texto-italica:hover{
+    color: #860E0A;
+}
+
+.proyecto3-text h4{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu';
+    font-size: 1.5rem;
+    margin-top: 30px;
+    height: 75%;
+}
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu';
+    font-size: 1.5rem;
+}
+input{
+    margin-bottom: 15px;
+    background: rgba(153, 149, 149, 0.04);
+    border: #860E0A solid 1px;
+    border-radius: 40px;
+    box-shadow: #000 0px 3px 10px;
+    text-align: center;
+}
+
+textarea{
+    margin-bottom: 10px;
+    background: rgba(153, 149, 149, 0.04);
+    border: #860E0A solid 1px;
+    border-radius: 40px;
+    box-shadow: #000 0px 3px 10px;
+    padding: 15px;
+}
+#contacto ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
+}
+#contacto a:hover{
+    color: #860E0A;
+    font-size: 2rem;
+}
+
+#contacto .img1{
+    position: absolute;
+    left: 5%;
+    width: 350px;
+    height: 350px;
+}
+
+#contacto .img2{
+    position: absolute;
+    right: 5%;
+    width: 350px;
+    height: 350px;
+}
+#contacto h3{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.offcanvas{
+    background-color: #860e0a65;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media screen and (max-width: 688px) {
+section{
+    height: max-content;
+}
+    header{
+        width: 100vw;
+    }
+   .headerTitle{
+       display:none;
+
+   }
+   .headerTitle-mobile{
+    font-size: 1rem;
+}
+
+   .movil-menu{
+    display: block;
+    margin: 0 px;
+}
+
+   .nav-bar-header{
+       display: none;
+   }
+
+   .nav-sidebar{
+       display: none;
+       }
+    #home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25%;
+        
+    }
+    .home-img{
+        display: none;
+    }
+
+    #home .home-title h1{
+        font-size: 1.5rem;
+    }
+    .title-top-text{
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: left;
+    }
+    .title-bottom-text{
+        color: #860E0A;
+       font-weight: lighter;
+       font-style: italic;
+       text-align: right;
+       font-size: 1rem;}
+
+       .social-media{
+        margin: 5px;
+        font-size: 1rem;
+        ;
+    }
+
+    .social-media li{
+        display: inline-block;
+        margin: 0.5rem;
+    }
+
+    .contact-button{
+        color: #000;
+        border: #860E0A solid 1px;
+        border-radius:40px;
+        font-size: 0.75rem;
+        margin: 3px;
+    }
+    .portfolio-button{
+
+        color: #000;
+        border: #860E0A solid 1px;
+        border-radius:40px;
+        font-size: 0.75rem;
+        
+    }
+
+    #about{
+        display: flex;
+        flex-direction: column;
+        justify-items: space-between;
+        align-items: center;
+        }
+        .about-img{
+            max-width: 80%;
+            max-height: 650px;
+        }
+        .about-text{
+            font-size: 1rem;
+            width: 65vw;
+            margin-bottom: 2rem;
+        }
+
+        .about-title{
+
+            margin-top: 15%;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .about-study-list h3{
+            font-size: 1rem;
+        }
+        .about-study-list hr{
+            display:none
+        }
+
+        .about-study-list ul{
+         font-size: 1rem;
+         flex-direction: column;
+         justify-items: center;
+        }
+
+        .about-study-list li{
+            margin-bottom: 10px;
+            margin-right: 25px;
+        }
+
+        #portfolio{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        #portfolio h3{
+            font-size: 1.5rem;   
+        }
+        .proyect-text{
+            font-size: 1rem;
+            max-width: 65%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .proyecto1-text h4{
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #portfolio .img1{
+            max-width: 50%;
+            height: auto;
+
+        }
+        #portfolio .img2{
+            max-width: 50%;
+            height: auto;
+        }
+        #portfolio .img3{
+            max-width: 50%;
+            height: auto;
+        }
+        .texto-italica{
+            margin-top: 15px;
+        }
+        
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Ubuntu';
+            font-size: .75rem;
+            margin-top: 30px;
+            height: 75%;
+        }
+        #contacto h3{
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        #contacto img{
+            display: none;
+        }
+}
+
+@media screen and (min-width: 689px) and (max-width:992px) {
+    section{
+        height: max-content;
+    }
+        header{
+            width: 100vw;
+        }
+       .headerTitle{
+           display: none;
+    
+       }
+       .movil-menu{
+        display: block
+    }
+    .headerTitle-mobile{
+        font-size: 1rem;
+    }
+    
+       .nav-bar-header{
+           display: none;
+       }
+    
+       .nav-sidebar{
+           display: none;
+           }
+        #home{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20%;
+            
+        }
+        .home-img{
+            max-width: 25vw;
+        }
+    
+        #home .home-title h1{
+            font-size: 2rem;
+        }
+        .title-top-text{
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: left;
+        }
+        .title-bottom-text{
+            color: #860E0A;
+           font-weight: lighter;
+           font-style: italic;
+           text-align: right;
+           font-size: 1.5rem;}
+    
+           .social-media{
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+            margin: 5px;
+            font-size: 1rem;
+            ;
+        }
+    
+        .social-media li{
+            display: inline-block;
+            margin: 0.5rem;
+        }
+    
+        .contact-button{
+            color: #000;
+            border: #860E0A solid 1px;
+            border-radius:40px;
+            font-size: 0.75rem;
+            margin: 3px;
+        }
+        .portfolio-button{
+    
+            color: #000;
+            border: #860E0A solid 1px;
+            border-radius:40px;
+            font-size: 0.75rem;
+            
+        }
+    
+        #about{
+            display: flex;
+            flex-direction: column;
+            justify-items: space-between;
+            align-items: center;
+            }
+            .about-img{
+                max-width: 80%;
+                max-height: 650px;
+            }
+            .about-text{
+                font-size: 1rem;
+                width: 65vw;
+                margin-bottom: 2rem;
+            }
+    
+            .about-title{
+    
+                margin-top: 15%;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+    
+            .about-study-list h3{
+                font-size: 1rem;
+            }
+            .about-study-list hr{
+                display:none
+            }
+    
+            .about-study-list ul{
+             font-size: 1rem;
+             flex-direction: column;
+             justify-items: center;
+            }
+    
+            .about-study-list li{
+                margin-bottom: 10px;
+                margin-right: 25px;
+            }
+    
+            #portfolio{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+            }
+            #portfolio h3{
+                font-size: 1.5rem;   
+            }
+            .proyect-text{
+                font-size: 1rem;
+                max-width: 65%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            .proyecto1-text h4{
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+    
+            #portfolio .img1{
+                max-width: 50%;
+                height: auto;
+    
+            }
+            #portfolio .img2{
+                max-width: 50%;
+                height: auto;
+            }
+            #portfolio .img3{
+                max-width: 50%;
+                height: auto;
+            }
+            .texto-italica{
+                margin-top: 15px;
+            }
+            
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Ubuntu';
+                font-size: .75rem;
+                margin-top: 30px;
+                height: 75%;
+            }
+            #contacto h3{
+                font-size: 1.5rem;
+                margin-bottom: 3rem;
+            }
+    
+            #contacto img{
+                display: none;
+            }
+}
+
+@media screen and (min-width: 993px) and (max-width:1300px) {
+    section{
+        height: max-content;
+    }
+
+.movil-menu{
+    display: block
+}
+.headerTitle-mobile{
+    font-size: 1rem;
+}
+
+    
+       .nav-bar-header{
+           display: none;
+       }
+    
+       .nav-sidebar{
+           display: none;
+           }
+      .menu{
+          display: none;
+      }
+
+           .social-media{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 5px;
+           }
+           .contact-button{
+            color: #000;
+            border: #860E0A solid 1px;
+            border-radius:40px;
+            font-size: 1.25rem;
+
+        }
+        
+        .portfolio-button{
+            color: #000;
+            border: #860E0A solid 1px;
+            border-radius:40px;
+            font-size: 1.25rem;
+            
+        }
+
+        #about{
+            display: flex;
+            flex-direction: column;
+            justify-items: space-between;
+            align-items: center;
+            }
+            .about-img{
+                max-width: 80%;
+                max-height: 650px;
+            }
+            .about-text{
+                font-size: 1rem;
+                width: 65vw;
+                margin-bottom: 2rem;
+            }
+    
+            .about-title{
+    
+                margin-top: 15%;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+    
+            .about-study-list h3{
+                font-size: 1rem;
+            }
+            .about-study-list hr{
+                display:none
+            }
+    
+            .about-study-list ul{
+             font-size: 1rem;
+             flex-direction: column;
+             justify-items: center;
+            }
+    
+            .about-study-list li{
+                margin-bottom: 10px;
+                margin-right: 25px;
+            }
+    
+            #portfolio{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+            }
+            #portfolio h3{
+                font-size: 2rem;   
+            }
+            .proyect-text{
+                font-size: 1rem;
+                max-width: 65%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            .proyecto1-text h4{
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+    
+            #portfolio .img1{
+                max-width: 50%;
+                height: auto;
+    
+            }
+            #portfolio .img2{
+                max-width: 50%;
+                height: auto;
+            }
+            #portfolio .img3{
+                max-width: 50%;
+                height: auto;
+            }
+            .texto-italica{
+                margin-top: 15px;
+            }
+            
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Ubuntu';
+                font-size: 1rem;
+                margin-top: 30px;
+                height: 75%;
+            }
+            #contacto h3{
+                font-size: 1.5rem;
+                margin-bottom: 3rem;
+            }
+    
+            #contacto img{
+                display: none;
+            }
+}
+    
+
