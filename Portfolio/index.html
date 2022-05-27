@@ -193,15 +193,15 @@
 
     </section>
 <section id="contacto">
-    <form action="">
+    <form name='contactForm' action="mailto:fedealtrui@gmail.com" onsubmit="validateForm()">
         <h3>¡Trabajemos Juntos!</h3>
         <label for="Nombre">Nombre</label>
-        <input type="text" name="Nombre" id="Nombre">
+        <input type="text" name="nombre" id="Nombre">
         <label for="Email">Email</label>
-        <input type="text" name="Email" id="Email">
+        <input type="text" name="email" id="Email">
         <label for="Mensaje">Mensaje</label>
-        <textarea name="Mensaje" id="Mensaje" cols="30" rows="5"></textarea>
-        <input type="submit" value="Enviar">
+        <textarea name="Mensaje" id="mensaje" cols="30" rows="5"></textarea>
+        <input type="submit" id='submit' value="Enviar">
     </form>
     <p>O contactame por :     </p>
 
@@ -219,5 +219,6 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src='index.js'></script>
 </body>
 </html>
